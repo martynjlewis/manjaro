@@ -1,0 +1,27 @@
+#/bin/bash
+sudo pacman-mirrors -g
+sudo pacman -Syyuu --noconfirm
+sudo pacman -S bash-completion --noconfirm
+yaourt -S guake --noconfirm
+yaourt -S libopenraw digikam kipi-plugins picard-git python-discid normalize libreplaygain reflac libquicktime python2-opengl python2-discid vlc lua-socket twolame libva-vdpau-driver ttf-freefont vcdimager cdrkit dvdauthor qt5-imageformats --noconfirm
+yaourt -S kdenlive movit frei0r-plugins sox --noconfirm
+yaourt -S java-openjfx --noconfirm
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/
+yaourt -S java-p7zip-binding --noconfirm
+yaourt -S get_iplayer-git atomicparsley-largefile-hg perl-mp3-info perl-mp3-tag flvstreamer id3v2 --noconfirm
+yaourt -S handbrake filebot python2-pillow xsane xsane-gimp sc-controller-git libzen puddletag tk --noconfirm
+yaourt -S deluge backintime --noconfirm
+yaourt -S k3b cdrdao emovix transcode opusfile dvd+rw-tools --noconfirm
+yaourt -S playonlinux lutris python-evdev python-pyinotify --noconfirm
+yaourt -S xfce-theme-greybird xfce-theme-blackbird --noconfirm
+yaourt -S xfce-theme-cobibird --noconfirm
+yaourt -S faenza-icon-theme --noconfirm
+yaourt -S numix-themes-archblue --noconfirm
+yaourt -S calibre udisks sshfs --noconfirm
+yaourt -S gramps graphviz rcs gtkspell3 python-pillow python-reportlab libgexiv2 osm-gps-map python-pyicu --noconfirm
+yaourt -S clementine --noconfirm
+yaourt -S gtk3-print-backends --noconfirm
+sudo pacman -R guayadeque --noconfirm
+sudo pacman -R thunderbird --noconfirm
+yaourt -S gtk-theme-config --noconfirm
+yaourt -S franz-bin --noconfirm
