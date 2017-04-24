@@ -44,3 +44,4 @@ sudo mv /etc/pacman.conf /etc/pacman.conf.bak
 cd settings
 sudo cp environment /etc/environment
 sudo cp pacman.conf /etc/pacman.conf
+sudo pacman -R manjaro-base-skel manjaro-browser-settings manjaro-documentation-en manjaro-hello manjaro-icons manjaro-xfce-settings vertex-maia-themes vertex-maia-icon-theme firefox firefox-i18n-en-gb --noconfirm
