@@ -3,6 +3,7 @@ sudo pacman-mirrors -g
 sudo pacman -S yaourt --noconfirm
 sudo pacman -Syyuu --noconfirm
 sudo pacman -S bash-completion --noconfirm
+sudo sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j7"/g' /etc/makepkg.conf
 yaourt -S guake --noconfirm
 yaourt -S libopenraw digikam kipi-plugins picard-git python-discid normalize libreplaygain reflac libquicktime python2-opengl python2-discid vlc lua-socket twolame libva-vdpau-driver ttf-freefont vcdimager cdrkit dvdauthor qt5-imageformats --noconfirm
 yaourt -S kdenlive movit frei0r-plugins sox --noconfirm
@@ -33,7 +34,6 @@ yaourt -S bluez-plugins bluez-utils bluez-plugins --noconfirm
 yaourt -S lib32-libcups lib32-libexif lib32-libldap lib32-gnutls lib32-gsm --noconfirm
 yaourt -S lib32-gstreamer0.10 lib32-libxcomposite lib32-libxslt lib32-libxxf86dga lib32-mpg123 lib32-openal lib32-v4l-utils --noconfirm
 yaourt -S crossover --noconfirm
-sudo sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j7"/g' /etc/makepkg.conf
 sudo echo 'XCURSOR_THEME="Adwaita"' | sudo tee /etc/environment
 sudo sed -i 's/#export FREETYPE_PROPERTIES="truetype:interpreter-version=40"/export FREETYPE_PROPERTIES="truetype:interpreter-version=38"/g' /etc/profile.d/freetype2.sh
 
