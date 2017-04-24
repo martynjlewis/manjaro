@@ -33,3 +33,5 @@ yaourt -S lib32-gstreamer0.10 lib32-libxcomposite lib32-libxslt lib32-libxxf86dg
 yaourt -S crossover --noconfirm
 sudo sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j7"/g' /etc/makepkg.conf
 sudo echo 'XCURSOR_THEME="Adwaita"' | sudo tee /etc/environment
+sudo sed -i 's/#export FREETYPE_PROPERTIES="truetype:interpreter-version=40"/export FREETYPE_PROPERTIES="truetype:interpreter-version=38"/g' /etc/profile.d/freetype2.sh
+
