@@ -22,7 +22,9 @@ yaourt -S numix-themes-archblue --noconfirm
 yaourt -S calibre udisks sshfs --noconfirm
 yaourt -S gramps graphviz rcs gtkspell3 python-pillow python-reportlab libgexiv2 osm-gps-map python-pyicu --noconfirm
 yaourt -S pstoedit libmythes beanshell libmspack --noconfirm
+yaourt -S ttf-mac-fonts --noconfirm
 yaourt -S ttf-freefont ttf-hack ttf-symbola vcdimager xed twolame libva-vdpau-driver --noconfirm
+yaourt -S fontconfig-ttf-ms-fonts --noconfirm
 yaourt -S clementine --noconfirm
 yaourt -S gtk3-print-backends --noconfirm
 yaourt -S ttf-mac-fonts --noconfirm
