@@ -1,5 +1,6 @@
 #/bin/bash
 sudo pacman-mirrors -g
+sudo pacman -S yaourt --noconfirm
 sudo pacman -Syyuu --noconfirm
 sudo pacman -S bash-completion --noconfirm
 yaourt -S guake --noconfirm
