@@ -1,4 +1,5 @@
 #/bin/bash
+sudo echo 'ILoveCandy' | sudo tee /etc/pacman.conf
 sudo pacman-mirrors -g
 sudo pacman -S yaourt --noconfirm
 sudo pacman -Syyuu --noconfirm
