@@ -1,15 +1,7 @@
 #/bin/bash
-sudo cp /etc/default/grub /etc/default/grub.bak
-sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT="quiet ipv6.disable=1 iommu=soft"/g' /etc/default/grub
-sudo update-grub
-sudo mv /etc/environment /etc/environment.bak
-sudo mv /etc/pacman.conf /etc/pacman.conf.bak
-cd settings
-sudo cp environment /etc/environment
-sudo cp pacman.conf /etc/pacman.conf
 sudo pacman-mirrors -g
 sudo pacman -S yaourt --noconfirm
-sudo pacman -Syyuu --noconfirm
+sudo pacman -Syyu --noconfirm
 sudo pacman -S bash-completion --noconfirm
 sudo sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j7"/g' /etc/makepkg.conf
 yaourt -S guake --noconfirm
@@ -43,4 +35,11 @@ yaourt -S lib32-libcups lib32-libexif lib32-libldap lib32-gnutls lib32-gsm --noc
 yaourt -S lib32-gstreamer0.10 lib32-libxcomposite lib32-libxslt lib32-libxxf86dga lib32-mpg123 lib32-openal lib32-v4l-utils --noconfirm
 yaourt -S crossover --noconfirm
 sudo sed -i 's/#export FREETYPE_PROPERTIES="truetype:interpreter-version=40"/export FREETYPE_PROPERTIES="truetype:interpreter-version=38"/g' /etc/profile.d/freetype2.sh
-
+sudo cp /etc/default/grub /etc/default/grub.bak
+sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT="quiet ipv6.disable=1 iommu=soft"/g' /etc/default/grub
+sudo update-grub
+sudo mv /etc/environment /etc/environment.bak
+sudo mv /etc/pacman.conf /etc/pacman.conf.bak
+cd settings
+sudo cp environment /etc/environment
+sudo cp pacman.conf /etc/pacman.conf
