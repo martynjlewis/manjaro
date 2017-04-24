@@ -20,13 +20,12 @@ yaourt -S numix-themes-archblue --noconfirm
 yaourt -S calibre udisks sshfs --noconfirm
 yaourt -S gramps graphviz rcs gtkspell3 python-pillow python-reportlab libgexiv2 osm-gps-map python-pyicu --noconfirm
 yaourt -S pstoedit libmythes beanshell libmspack --noconfirm
-yaourt -S ttf-freefont ttf-hack vcdimager xed twolame libva-vdpau-driver --noconfirm
+yaourt -S ttf-freefont ttf-hack ttf-symbola vcdimager xed twolame libva-vdpau-driver --noconfirm
 yaourt -S clementine --noconfirm
 yaourt -S gtk3-print-backends --noconfirm
 yaourt -S ttf-mac-fonts --noconfirm
 yaourt -S gtk-theme-config --noconfirm
-yaourt -S franz-bin --noconfirm
-yaourt -S bluez-plugins bluez-utils bluez-plugins bluez-tools --noconfirm
+yaourt -S bluez-plugins bluez-utils bluez-plugins --noconfirm
 yaourt -S lib32-libcups lib32-libexif lib32-libldap lib32-gnutls lib32-gsm --noconfirm
 yaourt -S lib32-gstreamer0.10 lib32-libxcomposite lib32-libxslt lib32-libxxf86dga lib32-mpg123 lib32-openal lib32-v4l-utils --noconfirm
 yaourt -S crossover --noconfirm
