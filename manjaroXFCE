@@ -1,4 +1,9 @@
 #/bin/bash
+sudo mv /etc/environment /etc/environment.bak
+sudo mv /etc/pacman.conf /etc/pacman.conf.bak
+cd settings
+sudo cp environment /etc/environment
+sudo cp pacman.conf /etc/pacman.conf
 sudo pacman-mirrors -g
 sudo pacman -S yaourt --noconfirm
 sudo pacman -Syyuu --noconfirm
