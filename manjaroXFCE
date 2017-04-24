@@ -13,7 +13,7 @@ yaourt -S get_iplayer-git atomicparsley-largefile-hg perl-mp3-info perl-mp3-tag 
 yaourt -S handbrake filebot python2-pillow xsane xsane-gimp sc-controller-git libzen puddletag tk --noconfirm
 yaourt -S deluge backintime --noconfirm
 yaourt -S k3b cdrdao emovix transcode opusfile dvd+rw-tools --noconfirm
-sudo pacman -S lib32-libldap lib32-nvidia-utils lib32-nvidia-libgl lib32-alsa-lib lib32-alsa-plugins lib32-libpulse lib32-alsa-oss lib32-openal wine winetricks playonlinux --noconfirm
+sudo pacman -S gufw lib32-libldap lib32-nvidia-utils lib32-nvidia-libgl lib32-alsa-lib lib32-alsa-plugins lib32-libpulse lib32-alsa-oss lib32-openal wine winetricks playonlinux --noconfirm
 yaourt -S lutris python-evdev python-pyinotify --noconfirm
 yaourt -S xfce-theme-greybird xfce-theme-blackbird --noconfirm
 yaourt -S xfce-theme-cobibird --noconfirm
@@ -31,3 +31,5 @@ yaourt -S bluez-plugins bluez-utils bluez-plugins --noconfirm
 yaourt -S lib32-libcups lib32-libexif lib32-libldap lib32-gnutls lib32-gsm --noconfirm
 yaourt -S lib32-gstreamer0.10 lib32-libxcomposite lib32-libxslt lib32-libxxf86dga lib32-mpg123 lib32-openal lib32-v4l-utils --noconfirm
 yaourt -S crossover --noconfirm
+sudo sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j7"/g' /etc/makepkg.conf
+sudo echo 'XCURSOR_THEME="Adwaita"' | sudo tee /etc/environment
