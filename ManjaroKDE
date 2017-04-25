@@ -1,0 +1,47 @@
+/bin/bash
+sudo pacman-mirrors -g
+sudo pacman -S yaourt --noconfirm
+sudo pacman -Syyu --noconfirm
+sudo pacman -S bash-completion --noconfirm
+sudo sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j7"/g' /etc/makepkg.conf
+yaourt -S libopenraw digikam kipi-plugins picard-git python-discid normalize libreplaygain reflac libquicktime python2-opengl python2-discid vlc lua-socket twolame libva-vdpau-driver ttf-freefont vcdimager cdrkit dvdauthor qt5-imageformats --noconfirm
+yaourt -S kdenlive movit frei0r-plugins sox --noconfirm
+yaourt -S java-openjfx --noconfirm
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk/
+yaourt -S java-p7zip-binding --noconfirm
+yaourt -S get_iplayer-git atomicparsley-largefile-hg perl-mp3-info perl-mp3-tag flvstreamer id3v2 --noconfirm
+yaourt -S handbrake filebot python2-pillow xsane xsane-gimp sc-controller-git libzen puddletag tk --noconfirm
+yaourt -S k3b cdrdao emovix transcode opusfile dvd+rw-tools --noconfirm
+sudo pacman -S gufw lib32-libldap lib32-nvidia-utils lib32-nvidia-libgl lib32-alsa-lib lib32-alsa-plugins lib32-libpulse lib32-alsa-oss lib32-openal wine winetricks playonlinux --noconfirm
+yaourt -S lutris python-evdev python-pyinotify --noconfirm
+yaourt -S xfce-theme-greybird xfce-theme-blackbird --noconfirm
+yaourt -S xfce-theme-cobibird --noconfirm
+yaourt -S faenza-icon-theme --noconfirm
+yaourt -S numix-themes-archblue --noconfirm
+yaourt -S calibre udisks sshfs --noconfirm
+yaourt -S gramps graphviz rcs gtkspell3 python-pillow python-reportlab libgexiv2 osm-gps-map python-pyicu --noconfirm
+yaourt -S pstoedit libmythes beanshell libmspack --noconfirm
+yaourt -S ttf-mac-fonts --noconfirm
+yaourt -S ttf-freefont ttf-hack ttf-symbola vcdimager xed twolame libva-vdpau-driver --noconfirm
+yaourt -S fontconfig-ttf-ms-fonts --noconfirm
+yaourt -S clementine --noconfirm
+yaourt -S gtk3-print-backends --noconfirm
+yaourt -S ttf-mac-fonts ttf-ubuntu-font-family ttf-google-fonts-typewolf --noconfirm
+yaourt -S gtk-theme-config --noconfirm
+yaourt -S bluez-plugins bluez-utils bluez-plugins --noconfirm
+yaourt -S lib32-libcups lib32-libexif lib32-libldap lib32-gnutls lib32-gsm --noconfirm
+yaourt -S lib32-gstreamer0.10 lib32-libxcomposite lib32-libxslt lib32-libxxf86dga lib32-mpg123 lib32-openal lib32-v4l-utils --noconfirm
+yaourt -S crossover --noconfirm
+yaourt -S viber obs-studio --noconfirm
+sudo sed -i 's/#export FREETYPE_PROPERTIES="truetype:interpreter-version=40"/export FREETYPE_PROPERTIES="truetype:interpreter-version=38"/g' /etc/profile.d/freetype2.sh
+sudo cp /etc/default/grub /etc/default/grub.bak
+sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT="quiet ipv6.disable=1 iommu=soft"/g' /etc/default/grub
+sudo update-grub
+sudo mv /etc/environment /etc/environment.bak
+sudo mv /etc/pacman.conf /etc/pacman.conf.bak
+cd settings
+sudo cp environment /etc/environment
+sudo cp pacman.conf /etc/pacman.conf
+sudo pacman -R xcursor-breeze
+sudo pacman -R manjaro-base-skel
+#sudo pacman -R manjaro-documentation-en manjaro-hello manjaro-icons manjaro-kde-settings vertex-maia-themes vertex-maia-icon-theme firefox firefox-i18n-en-gb --noconfirm
