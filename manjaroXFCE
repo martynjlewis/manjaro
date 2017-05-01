@@ -34,7 +34,6 @@ yaourt -S bluez-plugins bluez-utils bluez-plugins --noconfirm
 yaourt -S lib32-libcups lib32-libexif lib32-libldap lib32-gnutls lib32-gsm --noconfirm
 yaourt -S lib32-gstreamer0.10 lib32-libxcomposite lib32-libxslt lib32-libxxf86dga lib32-mpg123 lib32-openal lib32-v4l-utils --noconfirm
 yaourt -S crossover --noconfirm
-yaourt -S catfish mlocate --noconfirm
 yaourt -S viber obs-studio --noconfirm
 sudo sed -i 's/#export FREETYPE_PROPERTIES="truetype:interpreter-version=40"/export FREETYPE_PROPERTIES="truetype:interpreter-version=38"/g' /etc/profile.d/freetype2.sh
 sudo cp /etc/default/grub /etc/default/grub.bak
