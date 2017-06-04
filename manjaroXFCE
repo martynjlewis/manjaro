@@ -9,9 +9,10 @@ yaourt -S ttf-ms-fonts --noconfirm
 yaourt -S ttf-meta-base --noconfirm
 yaourt -S ttf-meta-extended-lt --noconfirm
 yaourt -S ttf-mac-fonts --noconfirm
-yaourt -S ttf-google-fonts-git --noconfirm
-yaourt -S ttf-ubuntu-font-family ttf-google-fonts-typewolf
+yaourt -S ttf-google-fonts-git
+yaourt -S ttf-google-fonts-typewolf
 yaourt -S ttf-freefont ttf-hack ttf-symbola vcdimager xed twolame --noconfirm
+yaourt -S leafpad --noconfirm
 yaourt -S libopenraw digikam kipi-plugins picard-git python-discid normalize libreplaygain reflac libquicktime python2-opengl python2-discid lua-socket twolame libva-vdpau-driver ttf-freefont vcdimager cdrkit dvdauthor qt5-imageformats --noconfirm
 yaourt -S kdenlive movit frei0r-plugins sox --noconfirm
 yaourt -S java-openjfx --noconfirm
