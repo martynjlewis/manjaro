@@ -1,41 +1,41 @@
-#/bin/bash
-sudo pacman-mirrors -g
-sudo pacman -S yaourt --noconfirm
-sudo pacman -Syyu --noconfirm
+#!/bin/bash
 sudo pacman -S bash-completion --noconfirm
+yaourt -S xcursor-neutral++ --noconfirm
+sudo cp /usr/bin/nano /usr/bin/vi
 sudo sed -i 's/#MAKEFLAGS="-j2"/MAKEFLAGS="-j7"/g' /etc/makepkg.conf
-yaourt -S base-devel --noconfirm
-yaourt -S ttf-ms-fonts --noconfirm
-yaourt -S ttf-meta-base --noconfirm
-yaourt -S ttf-meta-extended-lt --noconfirm
-yaourt -S ttf-mac-fonts --noconfirm
-yaourt -S ttf-google-fonts-git
-yaourt -S ttf-freefont ttf-hack ttf-symbola vcdimager xed twolame --noconfirm
-yaourt -S leafpad --noconfirm
-yaourt -S libopenraw digikam kipi-plugins picard python-discid normalize libreplaygain reflac libquicktime python2-opengl python2-discid lua-socket twolame libva-vdpau-driver ttf-freefont vcdimager cdrkit dvdauthor qt5-imageformats --noconfirm
-yaourt -S kdenlive movit frei0r-plugins sox --noconfirm
+yaourt -S libopenraw digikam kipi-plugins picard python-discid libquicktime python2-opengl python2-discid lua-socket twolame ttf-freefont --noconfirm
+yaourt -S frei0r-plugins sox --noconfirm
 yaourt -S java-openjfx --noconfirm
 yaourt -S get_iplayer-git atomicparsley-largefile-hg perl-mp3-info perl-mp3-tag flvstreamer id3v2 --noconfirm
-yaourt -S handbrake filebot python2-pillow xsane xsane-gimp sc-controller-git libzen puddletag tk --noconfirm
-yaourt -S deluge backintime --noconfirm
-yaourt -S k3b cdrdao emovix transcode opusfile dvd+rw-tools --noconfirm
-sudo pacman -S wine winetricks playonlinux --noconfirm
-yaourt -S lutris python-evdev python-pyinotify --noconfirm
 yaourt -S xfce-theme-greybird xfce-theme-blackbird --noconfirm
 yaourt -S faenza-icon-theme --noconfirm
 yaourt -S numix-themes-archblue --noconfirm
-yaourt -S calibre udisks sshfs --noconfirm
-yaourt -S gramps graphviz rcs gtkspell3 python-pillow python-reportlab libgexiv2 osm-gps-map python-pyicu --noconfirm
-yaourt -S pstoedit libmythes beanshell libmspack --noconfirm
+ln -s /DATA1/Documents/ ~/Documents
+ln -s /DATA1/Music/ ~/Music
+ln -s /DATA1/Games/ ~/Games
+ln -s /DATA1/Downloads/ ~/Downloads
+ln -s /DATA2/Pictures/  ~/Pictures
+ln -s /DATA2/Videos/ ~/Videos
+yaourt -S leafpad --noconfirm
+yaourt -S handbrake filebot python2-pillow xsane xsane-gimp sc-controller-git libzen puddletag tk --noconfirm
+yaourt -S lutris python-pyinotify --noconfirm
+yaourt -S calibre --noconfirm
+yaourt -S gramps graphviz rcs gtkspell3 python-reportlab libgexiv2 osm-gps-map python-pyicu --noconfirm
+sudo pacman -R libreoffice-still-en-gb --noconfirm
+yaourt -S libreoffice-fresh-en-GB pstoedit libmythes beanshell unixodbc postgresql-libs coin-or-mp libmspack --noconfirm
+yaourt -S ttf-mac-fonts ttf-symbola --noconfirm
+yaourt -S veracrypt --noconfirm
+yaourt -S visual-studio-code --noconfirm
+yaourt -S ttf-ms-fonts --noconfirm
+yaourt -S fonts-meta-base --noconfirm
+yaourt -S fonts-meta-extended-lt --noconfirm
+yaourt -S ttf-google-fonts-git
 yaourt -S clementine --noconfirm
+yaourt -S deluge indicator-kdeconnect --noconfirm
 yaourt -S gtk3-print-backends --noconfirm
-yaourt -S gtk-theme-config --noconfirm
 yaourt -S bluez-plugins bluez-utils bluez-plugins --noconfirm
-yaourt -S lib32-libcups lib32-libexif lib32-libldap lib32-gnutls lib32-gsm --noconfirm
-yaourt -S lib32-gstreamer0.10 lib32-libxcomposite lib32-libxslt lib32-libxxf86dga lib32-mpg123 lib32-openal lib32-v4l-utils --noconfirm
+yaourt -S lib32-fontconfig lib32-libcups lib32-sdl lib32-libdbus lib32-libexif lib32-libldap lib32-libpulse lib32-gnutls lib32-gsm lib32-libxcomposite lib32-libxml2 lib32-libxslt lib32-libxxf86vm lib32-libxxf86dga lib32-mpg123 lib32-nss-mdns lib32-openal lib32-openssl lib32-v4l-utils lib32-giflib lib32-opencl-icd-loader lib32-gst-plugins-base-libs --noconfirm
 yaourt -S crossover --noconfirm
 yaourt -S viber obs-studio --noconfirm
-yaourt -S indicator-kdeconnect --noconfirm
-sudo cp /etc/default/grub /etc/default/grub.bak
-#sudo sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT="quiet ipv6.disable=1 iommu=soft"/g' /etc/default/grub
-#sudo pacman -R xcursor-breeze manjaro-base-skel manjaro-browser-settings manjaro-documentation-en manjaro-hello manjaro-icons manjaro-xfce-settings vertex-maia-themes vertex-maia-icon-theme firefox firefox-i18n-en-gb --noconfirm
+yaourt -S wine --noconfirm
+winecfg
