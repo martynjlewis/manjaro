@@ -32,3 +32,5 @@ yaourt -S crossover --noconfirm
 yaourt -S viber obs-studio --noconfirm
 yaourt -S wine --noconfirm
 winecfg
+
+## Make sure to add 'iommu=soft' and 'modprobe.blacklist=sp5100_tco' to the kernel options in /etc/default/grub
